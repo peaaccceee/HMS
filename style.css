@@ -1,3 +1,10 @@
+:root {
+    --nav: #03045E;
+    --button-color: #0096c7;
+    --text: #
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,28 +13,72 @@
 
 #home {
     height: 100vh;
-    background-image: url(images/hospital-corridor.jpg);
+    background-image: url(images/doc-bg.jpg);
     background-size: cover;
+    display: flex;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    width: 100%;
+    padding: 30px 100px;
+    background-color: var(--nav);
+    height: 10%;
 }
 
-.header ul {
+.nav-bar ul{
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+    /* background-color: var(--nav); */
 }
 
-.header ul a {
+.nav-bar ul a {
     text-decoration: none;
     color: white;
     font-size: 18px;
 }
 
-.header ul a:hover {
-    /* background-color: #bad6eb; */
+.header button {
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--button-color);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.hero-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* #about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+.vision-mission {
+    display: flex;
+    height: 50vh;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
 }
