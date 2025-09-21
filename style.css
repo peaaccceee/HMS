@@ -1,7 +1,7 @@
 :root {
     --nav: #03045E;
     --button-color: #0096c7;
-    --text: #
+    --vm-background: #0077b6;
 
 }
 
@@ -65,17 +65,46 @@
     justify-content: center;
 }
 
-/* #about {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-} */
-
 .vision-mission {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     height: 50vh;
+    width: 100%;
+    background-color: var(--vm-background);
+    color: white;
+    gap: 20px;
+}
+
+.vision, .mission {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 50px;
+    /* border: 1px solid #03045E; */
+    
+}
+
+.mission {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 50px;
+    background-color: #03045E;  
+}
+
+.vision h2, .mission h2 {
+    font-size: 30px;
+    border-bottom: 2px solid #03045E;
+    margin-bottom: 20px;
+}
+
+.vision h2 p {
+    width: 50%;
+    gap: 10px;
 }
 
 .login-form form {
